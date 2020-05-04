@@ -1,0 +1,19 @@
+{
+  "name": "oportun-git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonnyesquivel/git-basics.git"
+  },
+  "author": "Jhonny Esquivel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhonnyesquivel/git-basics/issues"
+  },
+  "homepage": "https://github.com/jhonnyesquivel/git-basics#readme"
+}
