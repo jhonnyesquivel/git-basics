@@ -14,9 +14,12 @@
     <div class="padded">
       <ul>
         <li><a id="link1" class="nav-section1" href="#section1">1. Clone</a></li>
-        <li><a id="link5" class="nav-section5" href="#section5">5. Pull</a></li>
-        <li><a id="link7" class="nav-section7" href="#section7">7. Merge</a></li>   
-        <li><a id="link9" class="nav-section9" href="#section9">9. Revert</a></li>       
+        <li><a id="link3" class="nav-section3" href="#section3">3. Add</a></li>
+        <li><a id="link5" class="nav-section5" href="#section5">5. Pull</a></li> 
+        <li><a id="link7" class="nav-section7" href="#section7">7. Merge</a></li>    
+        <li><a id="link8" class="nav-section8" href="#section8">8. Rebase</a></li>
+        <li><a id="link9" class="nav-section9" href="#section9">9. Revert</a></li>  
+
       </ul>
     </div>
   </nav>
@@ -29,7 +32,19 @@
     <code> git clone https://github.com/jhonnyesquivel/git-basics.git </code>
 
     <p><a href="https://git-scm.com/docs/git-clone">Quiero saber mas</a></p>
-  </article>
+    </article>
+    <article>
+      <h1 id="section2">3. Add</h1>
+      <p>Indica a la terminal los cambios que seran incluidos en el siguiente commit.</p>
+      <code> git add &lt;.|filename&gt; </code>
+      <p>Si se agrega "." como filename, se agregaran todos los archivos modificados</p>
+      <p>Si solo se desea agregar un archivo, basta con escribir el nombre del mismo luego del comando.</p>
+      <p>Ejemplo:</p>
+      <code> git add . </code>
+      <br>
+      <code> git add index.html </code>
+      <p><a href="https://git-scm.com/docs/git-add">Quiero saber más</a></p>
+    </article>
 
   <article>
     <h1 id="section5">5. Pull</h1>
@@ -38,8 +53,7 @@
     <p>Ejemplo:</p>
     <code> git pull </code>
     <p><a href="https://git-scm.com/docs/git-pull">Quiero saber más</a></p>
-  </article>
-  
+  </article> 
   <article>
     <h1 id="section7">7. Merge</h1>
     <p>Combina el contendio diferente entre dos ramas, los cambios seran registrados como un commit en el log.</p>
@@ -47,9 +61,18 @@
     <p>Ejemplo:</p>
     <code> git merge feature/pull</code><br>
     <p><a href="https://git-scm.com/docs/git-merge">Quiero saber más</a></p>
-  </article>
 
-  <article>
+
+  </article>
+<article>
+    <h1 id="section8">8. Rebase</h1>
+    <p>Aplica los commits de un branch en en el top de un branch especificádo. Requerirá ejecutar el comando: <code>git push --force</code></p>
+    <code> git rebase &lt;branch&gt; </code>
+    <p>Ejemplo:</p>
+    <code> git rebase feature/pull</code><br>
+    <p><a href="https://git-scm.com/docs/git-rebase">Quiero saber más</a></p>
+  </article>
+    <article>
     <h1 id="section9">9. Reset</h1>
     <p>Permite retrocerder hasta un commit-id específico, requerirá ejecutar el comando <code>git push --force</code></p>
     <code> git reset --hard &lt;commit-id&gt; </code>
