@@ -13,20 +13,34 @@
   <nav class="nav">
     <div class="padded">
       <ul>
-        <li><a id="link1" class="nav-section1" href="#section1">1. Clone</a></li>
-        <li><a id="link4" class="nav-section4" href="#section4">4. Commit</a></li>
+
+      <li><a id="link1" class="nav-section1" href="#section1">1. Clone</a></li>
+      <li><a id="link2" class="nav-section2" href="#section2">2. Checkout</a></li>
+      <li><a id="link4" class="nav-section4" href="#section4">4. Commit</a></li>
+      <li><a id="link5" class="nav-section5" href="#section5">5. Pull</a></li>
       </ul>
     </div>
   </nav>
-
   <article>
     <h1 id="section1">1. Clone</h1>
     <p>Permite clonar un repositorio remoto a un workspace.</p>
     <code> git clone [path] </code>
     <p>Ejemplo:</p>
     <code> git clone https://github.com/jhonnyesquivel/git-basics.git </code>
-
     <p><a href="https://git-scm.com/docs/git-clone">Quiero saber mas</a></p>
+  </article>
+  <article>
+    <h1 id="section2">2. Checkout</h1>
+    <p>Permite crear/cambiar la rama en la que nos encontramos</p>
+    <code> git checkout [-b] &lt;branch&gt; </code>
+    <p>El parametro opcional -b le indica al terminal que en caso de que el branch no exsita localmente lo cree.</p>
+    <p>Si no se agrega -b: Si el branch se encuentra localmente, simplemente hara un cambio de rama. Si el branch no
+      existe, mostrará un error.</p>
+    <p>Ejemplo:</p>
+    <code> git checkout -b feature/add </code>
+    <br>
+    <code> git checkout feature/add </code>
+    <p><a href="https://git-scm.com/docs/git-checkout">Quiero saber m'as</a></p>
   </article>
   <article>
     <h1 id="section4">4. Commit</h1>
@@ -36,9 +50,16 @@
     <code> git commit -m "se agrega el archivo index al repositorio"</code>
     <p><a href="https://git-scm.com/docs/git-commit">Quiero saber más</a></p>
   </article>
+  <article>
+    <h1 id="section5">5. Pull</h1>
+    <p>Obtiene los cambios realizados en el repositorio remoto para la rama especificada</p>
+    <code> git pull </code>
+    <p>Ejemplo:</p>
+    <code> git pull </code>
+    <p><a href="https://git-scm.com/docs/git-pull">Quiero saber más</a></p>
+  </article>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
   <script src='./js/main.js'></script>
 </body>
-
 </html>
