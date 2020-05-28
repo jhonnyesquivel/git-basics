@@ -15,6 +15,7 @@
       <li><a id="link1" class="nav-section1" href="#section1">1. Clone</a></li>
       <li><a id="link2" class="nav-section2" href="#section2">2. Checkout</a></li>
       <li><a id="link5" class="nav-section5" href="#section5">5. Pull</a></li>
+      <li><a id="link9" class="nav-section9" href="#section9">9. Revert</a></li>
       </ul>
     </div>
   </nav>
@@ -46,6 +47,14 @@
     <p>Ejemplo:</p>
     <code> git pull </code>
     <p><a href="https://git-scm.com/docs/git-pull">Quiero saber más</a></p>
+  </article>
+  <article>
+    <h1 id="section9">9. Reset</h1>
+    <p>Permite retrocerder hasta un commit-id específico, requerirá ejecutar el comando <code>git push --force</code></p>
+    <code> git reset --hard &lt;commit-id&gt; </code>
+    <p>Ejemplo:</p>
+    <code> git reset --hard 3c3ef8c55539e1eb2f0a7d606f7afca3945dfcfd</code><br>
+    <p><a href="https://git-scm.com/docs/git-revert">Quiero saber más</a></p>
   </article>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
