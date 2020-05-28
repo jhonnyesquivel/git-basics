@@ -13,12 +13,23 @@
   <nav class="nav">
     <div class="padded">
       <ul>
-
+        <li><a id="link2" class="nav-section2" href="#section2">2. Checkout</a></li>
       </ul>
     </div>
   </nav>
 
-  
+  <article>
+    <h1 id="section2">2. Checkout</h1>
+    <p>Permite crear/cambiar la rama en la que nos encontramos</p>
+    <code> git checkout [-b] &lt;branch&gt; </code>
+    <p>El parametro opcional -b le indica al terminal que en caso de que el branch no exsita localmente lo cree.</p>
+    <p>Si no se agrega -b: Si el branch se encuentra localmente, simplemente hara un cambio de rama. Si el branch no existe, mostrará un error.</p>
+    <p>Ejemplo:</p>
+    <code> git checkout -b feature/add </code>
+    <br>
+    <code> git checkout feature/add </code>
+    <p><a href="https://git-scm.com/docs/git-checkout">Quiero saber m'as</a></p>
+  </article>
 
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
