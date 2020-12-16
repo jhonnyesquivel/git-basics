@@ -14,7 +14,11 @@
     <div class="padded">
       <ul>
         <li><a id="link1" class="nav-section1" href="#section1">1. Clone</a></li>
+
         <li><a id="link3" class="nav-section3" href="#section3">3. Add</a></li>
+
+        <li><a id="link6" class="nav-section6" href="#section6">6. Push</a></li>
+
       </ul>
     </div>
   </nav>
@@ -40,6 +44,17 @@
     <br>
     <code> git add index.html </code>
     <p><a href="https://git-scm.com/docs/git-add">Quiero saber más</a></p>
+  </article>
+  
+  <article>
+    <h1 id="section6">6. Push</h1>
+    <p>Sube un los cambios de un branch a un repositorio remoto. Se debe especificar el origin si el branch no existe remotamente.</p>
+    <code> git push --set-upstream origin &lt;branch&gt; </code>
+    <code> git push </code>
+    <p>Ejemplo:</p>
+    <code> git push --set-upstream origin feature/pull</code><br>
+    <code> git push</code>
+    <p><a href="https://git-scm.com/docs/git-push">Quiero saber más</a></p>
   </article>
 
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"
