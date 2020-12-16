@@ -20,6 +20,7 @@
 
         <li><a id="link6" class="nav-section6" href="#section6">6. Push</a></li>
 
+        <li><a id="link8" class="nav-section8" href="#section8">8. Rebase</a></li>
       </ul>
     </div>
   </nav>
@@ -64,6 +65,15 @@
     <code> git push --set-upstream origin feature/pull</code><br>
     <code> git push</code>
     <p><a href="https://git-scm.com/docs/git-push">Quiero saber más</a></p>
+  </article>
+
+  <article>
+    <h1 id="section8">8. Rebase</h1>
+    <p>Aplica los commits de un branch en en el top de un branch especificádo. Requerirá ejecutar el comando: <code>git push --force</code></p>
+    <code> git rebase &lt;branch&gt; </code>
+    <p>Ejemplo:</p>
+    <code> git rebase feature/pull</code><br>
+    <p><a href="https://git-scm.com/docs/git-rebase">Quiero saber más</a></p>
   </article>
 
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"
