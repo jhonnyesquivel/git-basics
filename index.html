@@ -16,10 +16,12 @@
         <li><a id="link1" class="nav-section1" href="#section1">1. Clone</a></li>
 
         <li><a id="link3" class="nav-section3" href="#section3">3. Add</a></li>
+
         <li><a id="link4" class="nav-section4" href="#section4">4. Commit</a></li>
 
         <li><a id="link6" class="nav-section6" href="#section6">6. Push</a></li>
 
+        <li><a id="link9" class="nav-section9" href="#section9">9. Revert</a></li>
       </ul>
     </div>
   </nav>
@@ -64,6 +66,15 @@
     <code> git push --set-upstream origin feature/pull</code><br>
     <code> git push</code>
     <p><a href="https://git-scm.com/docs/git-push">Quiero saber más</a></p>
+  </article>
+
+  <article>
+    <h1 id="section9">9. Reset</h1>
+    <p>Permite retrocerder hasta un commit-id específico, requerirá ejecutar el comando <code>git push --force</code></p>
+    <code> git reset --hard &lt;commit-id&gt; </code>
+    <p>Ejemplo:</p>
+    <code> git reset --hard 3c3ef8c55539e1eb2f0a7d606f7afca3945dfcfd</code><br>
+    <p><a href="https://git-scm.com/docs/git-revert">Quiero saber más</a></p>
   </article>
 
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"
